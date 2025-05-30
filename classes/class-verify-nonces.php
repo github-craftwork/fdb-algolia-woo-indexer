@@ -30,12 +30,11 @@ if ( ! class_exists( 'Algolia_Verify_Nonces' ) ) {
 			 * Filter incoming nonces and values
 			 */
 			$settings_nonce = filter_input( INPUT_POST, 'algolia_woo_indexer_admin_api_nonce_name', FILTER_DEFAULT );
-			
+
 			/**
 			 * Return boolean depending on if the nonce has been set
 			 */
 			return isset( $settings_nonce );
-
 		}
 
 			/**
